@@ -1,0 +1,129 @@
+:root {
+  --blue: #4285f4;
+  --red: #ea4335;
+  --yellow: #fbbc05;
+  --green: #0f9d58;
+}
+body {
+  font-family: "Lexend Deca", sans-serif;
+}
+
+/* HEADER STYLING */
+header {
+  display: flex;
+  justify-content: space-between;
+  color: #4d4d4d;
+}
+
+#header-left {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-header-left {
+  margin: 10px;
+  cursor: pointer;
+}
+
+#header-right {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.in-header-right {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.in-header-right button {
+  background: var(--blue);
+  color: white;
+  font-family: "Lexend Deca", sans-serif;
+  padding: 3%;
+  min-width: 90px;
+  min-height: 30px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.in-header-right button:hover {
+  background: #0262fd;
+}
+
+/* LOGO STYLING */
+#logo-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo {
+  font-size: 70px;
+  font-weight: 400;
+}
+
+#g {
+  color: var(--blue);
+}
+#o {
+  color: var(--red);
+}
+#o2 {
+  color: var(--yellow);
+}
+#g2 {
+  color: var(--blue);
+}
+#l {
+  color: var(--green);
+}
+#e {
+  color: var(--red);
+}
+
+/* SEARCH STYLING */
+
+#search-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 400px;
+  margin: auto;
+}
+
+#search {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  min-width: 500px;
+  min-height: 40px;
+  border-radius: 20px;
+  border: 1px solid black;
+}
+
+i {
+  padding: 8px;
+  cursor: pointer;
+}
+
+#search input {
+  width: 90%;
+  border: none;
+  text-align: left;
+  outline: none;
+}
+
+.search-icon {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.mic-icon {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  margin-left: auto; /* Push mic icon to the right */
+}
