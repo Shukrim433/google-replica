@@ -6,6 +6,9 @@
 }
 body {
   font-family: "Lexend Deca", sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 /* HEADER STYLING */
@@ -13,6 +16,7 @@ header {
   display: flex;
   justify-content: space-between;
   color: #4d4d4d;
+  font-weight: 350;
 }
 
 #header-left {
@@ -47,6 +51,7 @@ header {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-weight: 350;
 }
 
 .in-header-right button:hover {
@@ -101,7 +106,7 @@ header {
   min-width: 500px;
   min-height: 40px;
   border-radius: 20px;
-  border: 1px solid black;
+  border: 1px solid rgb(180, 179, 179);
 }
 
 i {
@@ -121,9 +126,85 @@ i {
   align-items: center;
   justify-content: left;
 }
+
 .mic-icon {
   display: flex;
   align-items: center;
   justify-content: right;
   margin-left: auto; /* Push mic icon to the right */
+}
+
+#search:hover {
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
+
+/* FOOTER STYLING */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  font-size: small;
+  color: #4d4d4d;
+  font-weight: 350;
+  background: #d6d6d6;
+  margin-top: auto;
+}
+
+.left-footer {
+  display: flex;
+}
+
+.in-left-footer {
+  margin: 10px;
+  cursor: pointer;
+}
+
+.right-footer {
+  display: flex;
+}
+
+.in-right-footer {
+  margin: 10px;
+  cursor: pointer;
+}
+
+/* UNDER SEARCH STYLING */
+.under-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.in-under-search {
+  margin: 10px;
+}
+
+
+.in-under-search button{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-family: "Lexend Deca", sans-serif;
+  font-weight: 350;
+}
+
+.in-under-search button:hover{
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 2px 5px;
+}
+
+/* RESPONSIVE STYLING SEARCH */
+@media (min-width: 320px) {
+
+  #search {
+    min-width: 350px;
+    min-height: 40px;
+  }
+}
+
+@media (min-width:481px)  {
+  #search {
+    min-width: 500px;
+    min-height: 40px;
+  }
 }
